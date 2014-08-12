@@ -1,0 +1,49 @@
+{
+    "name": "punch",
+    "version": "1.0.0",
+    "description": "CLI Time Tracking",
+    "license": "Apache v2",
+    "homepage": "https://github.com/autermann/punch",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/autermann/punch.git"
+    },
+    "author": {
+        "name": "Christian Autermann",
+        "github": "https://github.com/autermann",
+        "email": "christian@autermann.org",
+        "url": "http://autermann.org"
+    },
+    "maintainers": [
+        {
+            "name": "Christian Autermann",
+            "github": "https://github.com/autermann",
+            "email": "christian@autermann.org"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Christian Autermann",
+            "github": "https://github.com/autermann",
+            "email": "christian@autermann.org"
+        }
+    ],
+    "bugs": {
+        "url": "https://github.com/autermann/punch/issues"
+    },
+    "directories": {
+        "doc": "./doc",
+        "man": "./man",
+        "lib": "./lib",
+        "bin": "./bin"
+    },
+    "main": "./lib/punch.js",
+    "bin": {
+        "punch": "./bin/punch-cli.js"
+    },
+    "dependencies": {
+        "cli": "0.6.3",
+        "jsonfile": "2.0.0",
+        "moment": "2.8.1"
+    }
+}
