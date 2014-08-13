@@ -44,6 +44,7 @@
     "dependencies": {
         "cli": "0.6.3",
         "jsonfile": "2.0.0",
-        "moment": "2.8.1"
+        "moment": "2.8.1",
+        "colors": "0.6.2"
     }
 }
