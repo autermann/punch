@@ -10,7 +10,7 @@ var home = process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE;
 
 cli.parse({
 	file: [ "f", "Punch data file", "path", path.join(home, ".punch.json") ]
-}, ["in", "out", "status", "report"]);
+}, ["in", "out", "what", "status", "report"]);
 
 function checkArgLength(length) {
 	if (cli.argc !== length) { cli.getUsage(1); }
@@ -31,6 +31,7 @@ cli.main(function() {
 			checkArgLength(0);
 			return punch.report(options);
 		case 'status':
+		case 'what':
 			checkArgLength(0);
 			return punch.status(options);
 	}
