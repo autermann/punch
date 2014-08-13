@@ -3,9 +3,7 @@
 var cli = require('cli');
 var path = require("path")
 var punch = require('../lib/punch')
-
-cli.setApp("./package.json")
-	.enable("help", "version", "glob");
+cli.enable("help", "glob");
 
 
 var home = process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE;
